@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <a class="navbar-brand text-dark  logo" href="#">WASP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active text-dark text " href="#">Dashboard<span class="sr-only">(current)</span></a>
+                <a class=" nav-item nav-link text-dark text " href="#"> <i class="fa fa-bell"></i></a>
+                <a class="nav-item nav-link text-dark text" href="#">Mar 14 2023 11:41:02</a>
+                <a id="login-button" class="nav-item nav-link text-dark text" href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="popup" class="hidden">
+        <p class="popup">You have been logged in!</p>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card border-1">
+                    <h2><span class="card-1 card-heading">Today's Generation</span></h2>
+                    <p class="para-1">14.36 <span class="span-1">MV</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-2">
+                    <h2><span class="card-2">Plants Efficiency</span></h2>
+                    <p class="para-2">95.75 <span class="span-2">%</span></p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-3">
+                    <h2> <span class="card-3">Energy Consumption</span></h2>
+                    <p class="para-3">11.87 <span class="span-3">KWh</span> </p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card border-4">
+                    <h2> <span class="card-4">LifeTime Energy</span></h2>
+                    <p class="para-4">1406.1 <span class="span-4">GWh</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <h1 class="table-heading">Inverters Data Table</h1>
+        <div class="table">
+            <div class="table-wrapper">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Inverter</th>
+                            <th>Voltage (kV)</th>
+                            <th>Current (Amp)</th>
+                            <th>Active Power (MW)</th>
+                            <th>Apparent Power (MVA)</th>
+                            <th>IGBT Temp (C)</th>
+                            <th>Inductor Temp (C)</th>
+                            <th>DC Input Power (W)</th>
+                            <th>Ambient Temp (C)</th>
+                            <th>DC Voltage (C)</th>
+                            <th>Life Time Energy (J)</th>
+                            <th>Energy Per Day (KW)</th>
+                            <th>Water Temp (C)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Block-1_Inverter-1</td>
+                            <td>232</td>
+                            <td>130144</td>
+                            <td>957.1</td>
+                            <td>977.55</td>
+                            <td>50</td>
+                            <td>42</td>
+                            <td>963.1</td>
+                            <td>25</td>
+                            <td>656</td>
+                            <td>937.33</td>
+                            <td>787.33</td>
+                            <td>24</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-1_Inverter-2</td>
+                            <td>234</td>
+                            <td>1292.91</td>
+                            <td>960.37</td>
+                            <td>973.79</td>
+                            <td>52</td>
+                            <td>38</td>
+                            <td>962.37</td>
+                            <td>24</td>
+                            <td>659</td>
+                            <td>937.34</td>
+                            <td>787.34</td>
+                            <td>20</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-1_Inverter-3</td>
+                            <td>230</td>
+                            <td>1296.91</td>
+                            <td>963.83</td>
+                            <td>977.28</td>
+                            <td>40</td>
+                            <td>42</td>
+                            <td>962.83</td>
+                            <td>23</td>
+                            <td>658</td>
+                            <td>937.35</td>
+                            <td>787.35</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-2_Inverter-1</td>
+                            <td>234</td>
+                            <td>1294.79</td>
+                            <td>951.75</td>
+                            <td>971.73</td>
+                            <td>48</td>
+                            <td>45</td>
+                            <td>961.75</td>
+                            <td>24</td>
+                            <td>655</td>
+                            <td>937.36</td>
+                            <td>787.36</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-2_Inverter-2</td>
+                            <td>237</td>
+                            <td>1398.68</td>
+                            <td>957.99</td>
+                            <td>980.46</td>
+                            <td>46</td>
+                            <td>36</td>
+                            <td>960.99</td>
+                            <td>24</td>
+                            <td>655</td>
+                            <td>937.37</td>
+                            <td>787.37</td>
+                            <td>19</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-2_Inverter-3</td>
+                            <td>235</td>
+                            <td>1292.92</td>
+                            <td>952.6</td>
+                            <td>974</td>
+                            <td>43</td>
+                            <td>38</td>
+                            <td>961.6</td>
+                            <td>21</td>
+                            <td>655</td>
+                            <td>937.38</td>
+                            <td>787.38</td>
+                            <td>19</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-3_Inverter-1</td>
+                            <td>236</td>
+                            <td>1297.76</td>
+                            <td>959.44</td>
+                            <td>957.9</td>
+                            <td>37</td>
+                            <td>42</td>
+                            <td>967.44</td>
+                            <td>24</td>
+                            <td>662</td>
+                            <td>937.39</td>
+                            <td>787.39</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-3_Inverter-2</td>
+                            <td>235</td>
+                            <td>1292.92</td>
+                            <td>952.6</td>
+                            <td>974</td>
+                            <td>43</td>
+                            <td>38</td>
+                            <td>961.6</td>
+                            <td>21</td>
+                            <td>655</td>
+                            <td>937.38</td>
+                            <td>787.38</td>
+                            <td>19</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-3_Inverter-3</td>
+                            <td>236</td>
+                            <td>1297.76</td>
+                            <td>959.44</td>
+                            <td>957.9</td>
+                            <td>37</td>
+                            <td>42</td>
+                            <td>967.44</td>
+                            <td>24</td>
+                            <td>662</td>
+                            <td>937.39</td>
+                            <td>787.39</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-4_Inverter-1</td>
+                            <td>237</td>
+                            <td>1398.68</td>
+                            <td>957.99</td>
+                            <td>980.46</td>
+                            <td>46</td>
+                            <td>36</td>
+                            <td>960.99</td>
+                            <td>24</td>
+                            <td>655</td>
+                            <td>937.37</td>
+                            <td>787.37</td>
+                            <td>19</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-4_Inverter-2</td>
+                            <td>234</td>
+                            <td>1294.79</td>
+                            <td>951.75</td>
+                            <td>971.73</td>
+                            <td>48</td>
+                            <td>45</td>
+                            <td>961.75</td>
+                            <td>24</td>
+                            <td>655</td>
+                            <td>937.36</td>
+                            <td>787.36</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                        <tr>
+                            <td>Block-4_Inverter-3</td>
+                            <td>230</td>
+                            <td>1296.91</td>
+                            <td>963.83</td>
+                            <td>977.28</td>
+                            <td>40</td>
+                            <td>42</td>
+                            <td>962.83</td>
+                            <td>23</td>
+                            <td>658</td>
+                            <td>937.35</td>
+                            <td>787.35</td>
+                            <td>23</td>
+                            <td><button class="button">VIEW</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
